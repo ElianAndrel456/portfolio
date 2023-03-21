@@ -1,0 +1,360 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Draw from '../icons/Draw.astro'
+import RunIcon from '../icons/RunIcon.astro'
+import ReadIcon from '../icons/ReadIcon.astro'
+import GameIcon from '../icons/GameIcon.astro'
+import MusicIcon from '../icons/MusicIcon.astro'
+import Pacman from '../icons/Pacman.astro'
+import SlideProject from '../components/SlideProject.astro'
+---
+
+<script src='https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js'></script>
+
+<Layout title='DEV - Elian'>
+  <!-- Banner Menu -->
+  <main class='pt-16'>
+    <div
+      class='w-full min-h-[calc(100vh-64px)] flex flex-col md:flex-row md:relative justify-center items-center'>
+      <div class='flex flex-col items-center text-center gap-y-2 relative overflow-hidden'>
+        <p
+          class='text-primary text-4xl font-bold md:text-6xl animate__animated animate__jackInTheBox'>
+          Elian Joyo Villanueva
+        </p>
+        <p class='text-2xl text-white font-semibold md:text-4xl'>FullStack Developer</p>
+        <p class='text-xl md:text-2xl text-gray-600 px-8 mt-2'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci similique beatae ex
+        </p>
+        <a
+          href='https://firebasestorage.googleapis.com/v0/b/portfolio-1b0b3.appspot.com/o/ELIANJOYOVILLANUEVACV%20(1).pdf?alt=media&token=675d6c11-df0c-4b23-b7f2-b24d9aff9d5d'
+          target='_blank'>
+          <button class='px-4 py-2 bg-primary cursor-pointer text-black rounded'>
+            Download cv
+          </button>
+        </a>
+        <div class='w-full'>
+          <Pacman className='bg-darkPrimary w-20 hidden sm:block  animation__pacman' />
+        </div>
+      </div>
+      <Draw className='w-full md:w-[700px] ' />
+    </div>
+    <!-- About Me -->
+    <div class='px-8'>
+      <h2
+        class='text-3xl md:text-5xl md:text-left md:border-b-2 md:w-fit font-bold text-center text-transparent bg-clip-text bg-gradient-to-t from-primary to-secondary my-10'>
+        About Me
+      </h2>
+
+      <div class='md:flex md:flex-row-reverse md:gap-2 md:items-center'>
+        <div class='space-y-2 my-2 md:text-xl'>
+          <p>
+            Hi! I'm Elian Joyo Villanueva a Fullstack Developer from Perú specialized in javascript
+            ecosystem technologies such as <span class='text-sky-400 font-bold'>React JS</span>.
+          </p>
+          <p>
+            I'm currently a Freelance Developer but I'm looking to work in a full time job. I'm also
+            <span class='text-red-500 font-bold'>
+              studying systems engineering (UTP)
+            </span>Technological University of Peru.
+          </p>
+
+          <p>
+            <span class='text-primary font-bold'> I love learning new things and help others</span>
+            , I'm a very curious person.
+          </p>
+
+          <div>
+            <h3 class='text-lg font-semibold my-2'>Hobbies</h3>
+            <ul class='flex gap-3'>
+              <li
+                class='border-2 flex flex-col items-center justify-center border-primary p-1 rounded-lg sm'>
+                <p>Run</p>
+                <RunIcon className='w-10 h-10 fill-white' />
+              </li>
+              <li
+                class='border-2 flex flex-col items-center justify-center border-primary p-1 rounded-lg'>
+                <p>Read</p>
+                <ReadIcon className='w-10 h-10 fill-white' />
+              </li>
+              <li
+                class='border-2 flex flex-col items-center justify-center border-primary p-1 rounded-lg'>
+                <p>Play</p>
+                <GameIcon className='w-10 h-10 fill-white' />
+              </li>
+              <li
+                class='border-2 flex flex-col items-center justify-center border-primary p-1 rounded-lg text-center'>
+                <p>Listen to music</p>
+                <MusicIcon className='w-10 h-10 fill-white' />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class='flex justify-center'>
+          <lottie-player
+            src='https://assets8.lottiefiles.com/private_files/lf30_WdTEui.json'
+            mode='bounce'
+            background='transparent'
+            speed='1'
+            loop
+            autoplay
+            class='w-80 md:w-[450px]'
+          ></lottie-player>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Skills -->
+
+  <div class='px-8'>
+    <h2
+      class='text-3xl md:text-5xl md:text-left md:border-b-2 md:w-fit font-bold text-center text-transparent bg-clip-text bg-gradient-to-t from-primary to-secondary my-10'>
+      Skills
+    </h2>
+    <div
+      class='grid grid-cols-2 w-full place-items-center gap-4 md:grid-cols-3 lg:grid-cols-4 lg:gap-8'>
+      <div class=''>
+        <img src='https://img.icons8.com/color/80/null/typescript.png' />
+        <p class='text-center'>typescript</p>
+      </div>
+      <div>
+        <img src='https://img.icons8.com/color/80/null/react-native.png' /><p class='text-center'>
+          React JS
+        </p>
+      </div>
+      <div>
+        <img src='https://img.icons8.com/color/80/null/material-ui.png' /><p class='text-center'>
+          Material UI
+        </p>
+      </div>
+      <div>
+        <img src='https://img.icons8.com/color/80/null/vue-js.png' /><p class='text-center'>Vue</p>
+      </div>
+      <div>
+        <img src='https://img.icons8.com/color/80/null/mongodb.png' /><p class='text-center'>
+          Mongoose
+        </p>
+      </div>
+      <div>
+        <img src='https://img.icons8.com/color/80/null/firebase.png' /><p class='text-center'>
+          Firebase
+        </p>
+      </div>
+      <div>
+        <img src='https://img.icons8.com/color/80/null/nodejs.png' /><p class='text-center'>Node</p>
+      </div>
+      <div>
+        <img src='https://img.icons8.com/color/80/null/python--v1.png' /><p class='text-center'>
+          Python
+        </p>
+      </div>
+      <div>
+        <img src='https://img.icons8.com/color/80/null/microsoft-sql-server.png' /><p
+          class='text-center'>
+          SQL Server
+        </p>
+      </div>
+      <div class=''>
+        <img src='https://img.icons8.com/officel/80/null/express-js.png' /><p class='text-center'>
+          Express
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Proyects -->
+
+  <div class='px-8'>
+    <h2
+      class='text-3xl md:text-5xl md:text-left md:border-b-2 md:w-fit font-bold text-center text-transparent bg-clip-text bg-gradient-to-t from-primary to-secondary my-10'>
+      Projects
+    </h2>
+    <div class='swiper'>
+      <!-- Additional required wrapper -->
+      <div class='swiper-wrapper'>
+        <!-- Slides -->
+        <div class='swiper-slide hidden md:block'></div>
+
+        <SlideProject
+          title='This is my first project'
+          description='  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, nulla!'
+          img='https://blogs.iadb.org/conocimiento-abierto/wp-content/uploads/sites/10/2019/12/banner-lecciones-aprendidas-proyectos-desarrollo-2019.jpg'
+          tecnologies={['React', 'Vue']}
+        />
+        <SlideProject
+          title='This is my first project'
+          description='  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, nulla!'
+          img='https://blogs.iadb.org/conocimiento-abierto/wp-content/uploads/sites/10/2019/12/banner-lecciones-aprendidas-proyectos-desarrollo-2019.jpg'
+          tecnologies={['React', 'Vue']}
+        />
+        <SlideProject
+          title='This is my first project'
+          description='  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, nulla!'
+          img='https://blogs.iadb.org/conocimiento-abierto/wp-content/uploads/sites/10/2019/12/banner-lecciones-aprendidas-proyectos-desarrollo-2019.jpg'
+          tecnologies={['React', 'Vue']}
+        />
+        <SlideProject
+          title='This is my first project'
+          description='  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, nulla!'
+          img='https://blogs.iadb.org/conocimiento-abierto/wp-content/uploads/sites/10/2019/12/banner-lecciones-aprendidas-proyectos-desarrollo-2019.jpg'
+          tecnologies={['React', 'Vue']}
+        />
+        <SlideProject
+          title='This is my first project'
+          description='  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, nulla!'
+          img='https://blogs.iadb.org/conocimiento-abierto/wp-content/uploads/sites/10/2019/12/banner-lecciones-aprendidas-proyectos-desarrollo-2019.jpg'
+          tecnologies={['React', 'Vue']}
+        />
+        <SlideProject
+          title='This is my first project'
+          description='  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, nulla!'
+          img='https://blogs.iadb.org/conocimiento-abierto/wp-content/uploads/sites/10/2019/12/banner-lecciones-aprendidas-proyectos-desarrollo-2019.jpg'
+          tecnologies={['React', 'Vue']}
+        />
+
+        <div class='swiper-slide hidden md:block'></div>
+      </div>
+    </div>
+    <script>
+      import Swiper, { Navigation, Pagination, EffectCoverflow, Autoplay } from 'swiper'
+      import 'swiper/css/bundle'
+
+      let SlideOptionModify = window.innerWidth > 768 ? 3 : 1
+
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        modules: [Navigation, Autoplay, EffectCoverflow, Pagination],
+
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+
+        effect: 'coverflow',
+        coverflowEffect: {
+          rotate: SlideOptionModify === 3 ? 50 : 0,
+          stretch: 0,
+          depth: 200,
+
+          slideShadows: false,
+        },
+
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+
+        slidesPerView: SlideOptionModify,
+      })
+
+      window.addEventListener('resize', () => {
+        console.log(window.innerWidth)
+        if (window.innerWidth > 768) {
+          swiper.params.slidesPerView = 3
+        } else {
+          swiper.params.slidesPerView = 1
+        }
+      })
+    </script>
+  </div>
+  <!-- Contact ME -->
+
+  <div class='w-full my-10'>
+    <h2
+      class='text-3xl md:text-5xl md:text-left md:border-b-2 md:w-fit font-bold text-center text-transparent bg-clip-text bg-gradient-to-t from-primary to-secondary my-10'>
+      Contact Me
+    </h2>
+
+    <div class='flex w-full'>
+      <form
+        id='form'
+        class='flex flex-col justify-center px-8 flex-1 transition-all md:bg-white md:bg-opacity-10 md:rounded md:pt-2 md:shadow-inner md:hover:shadow-primary relative'>
+        <div class='flex flex-col gap-y-2'>
+          <label
+            for='form__name'
+            class='border-b-2 w-fit border-primary rounded-b-3xl text-lg'
+            >Name</label
+          >
+          <input
+            id='form__name'
+            type='text'
+            name='form__name'
+            placeholder='Your Name'
+            class='pl-4 py-2 transition rounded placeholder:text-secondary outline-none text-black focus:bg-slate-500 relative'
+          />
+        </div>
+        <div class='flex flex-col gap-y-2'>
+          <label
+            for='form__email'
+            class='border-b-2 w-fit border-primary rounded-b-3xl text-lg'
+            >Email</label
+          >
+          <input
+            id='form__email'
+            type='email'
+            name='form__email'
+            placeholder='example@example.com'
+            class='pl-4 py-2 transition rounded placeholder:text-secondary outline-none text-black focus:bg-slate-500'
+          />
+        </div>
+        <div class='flex flex-col gap-y-2'>
+          <label
+            for='form__message'
+            class='border-b-2 w-fit border-primary rounded-b-3xl text-lg'
+            >Message</label
+          >
+          <textarea
+            name='form__message'
+            id='form__message'
+            rows='4'
+            placeholder="What's on your mind?"
+            class='pl-4 py-2 transition rounded placeholder:text-secondary outline-none text-black focus:bg-slate-500'
+          ></textarea>
+        </div>
+        <div class='md:flex md:justify-end'>
+          <button
+            type='submit'
+            class='bg-secondary mx-auto md:mx-0 hover:bg-primary transition-all w-fit px-6 py-2 rounded cursor-pointer md:mt-10'
+            >Send message</button
+          >
+        </div>
+      </form>
+      <lottie-player
+        src='https://assets8.lottiefiles.com/packages/lf20_qxkLV7DHka.json'
+        background='transparent'
+        speed='0.85'
+        autoplay
+        loop
+        class='hidden md:block md:flex-1 w-'
+      ></lottie-player>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .animation__pacman {
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    animation: pacman 5s ease-in infinite;
+  }
+  .animation__pacman:hover {
+    transform: scale(1.2);
+  }
+
+  @keyframes pacman {
+    0% {
+      left: 0%;
+      opacity: 1;
+    }
+    95%: {
+      opacity: 1;
+    }
+    100% {
+      left: 100%;
+      opacity: 0;
+    }
+  }
+</style>
